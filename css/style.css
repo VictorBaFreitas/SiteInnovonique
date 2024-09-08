@@ -28,6 +28,10 @@ section.patrocinio {
     height: 9vh;
 }
 
+img.text-logo {
+    width: 15vw;
+}
+
 span.color-purple {
     color: #5305d2;
 }
