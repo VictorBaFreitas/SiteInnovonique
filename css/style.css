@@ -30,11 +30,16 @@ span.color-purple {
     color: #5305d2;
 }
 
-@media (max-width: 3840px) {
+/*
+RESPONSIVE
+*/
+
+@media (max-width: 1920px) {
     img.text-logo {
         width: 15vw;
     }
     img.rotated-image {
+        position: absolute;
         transform: rotate(25deg);
         width: 28vw;
         right: -8vw;
@@ -42,38 +47,42 @@ span.color-purple {
     }
 }
 
-@media (min-width: 1000px) and (max-width: 1500px) {
-    img.text-logo {
-        width: 18vw;
-    }
-    img.rotated-image {
-        transform: rotate(25deg);
-        width: 33vw;
-        right: -8vw;
-        top: -25vh;
-    }
-}
-
-@media (max-width: 1000px) {
+@media (max-width: 990px) {
     img.text-logo {
         width: 21vw;
     }
+
     img.rotated-image {
-        transform: rotate(25deg);
-        width: 38vw;
-        right: -10vw;
-        top: -25vh;
+        width: 38vw; 
+        margin: 4vh auto; 
+        display: block;
+        transform: rotate(25deg); 
+        left: -5%;
     }
 }
 
-@media (max-width: 999px) {
+@media (max-width: 768px) {
     img.text-logo {
-        width: 17vw;
+        width: 30vw;
     }
+
     img.rotated-image {
+        width: 50vw;
+        margin: 10vh auto;
+        display: block;
         transform: rotate(25deg);
-        width: 28vw;
-        right: -8vw;
-        top: -25vh;
+    }
+}
+
+@media (max-width: 576px) {
+    img.text-logo {
+        width: 50vw;
+    }
+
+    img.rotated-image {
+        width: 60vw;
+        margin: 10vh auto;
+        display: block;
+        transform: rotate(25deg);
     }
 }
